@@ -1,0 +1,25 @@
+.error .error-section .bg-clr{
+    width:1000px;
+    margin:0 auto;
+}
+.error .error-section .bg-clr img{
+    margin-top:50px
+}
+.error .error-section .bg-clr p{
+    font-size:20px;
+    text-align:center;
+    margin-top:150px;
+}
+.error .error-section .bg-clr h2{
+    font-size:34px;
+    text-align:center;
+    padding:30px;
+    background:#46D6E7;
+    color:#fff;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.error-section a{
+    text-decoration: none;
+}

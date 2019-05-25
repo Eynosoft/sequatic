@@ -1,0 +1,17 @@
+//@import 'compass';
+@import 'bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'font-awesome/scss/font-awesome'; 
+
+@import 'variables/customvariables';
+
+
+@import 'pages/step-form.scss'; 
+
+//==============Common css===============// 
+@import 'helper/common';  
+@import 'helper/all-modal';  
+@import 'pages/all-panel.scss';  
+
+
+
+

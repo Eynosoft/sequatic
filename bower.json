@@ -1,0 +1,25 @@
+{
+  "name": "truckinsurance",
+  "description": "test",
+  "main": "Gruntfile.js",
+  "authors": [
+    "devesh"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "test"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.6.3"
+  }
+}

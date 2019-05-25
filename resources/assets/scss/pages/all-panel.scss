@@ -1,0 +1,20 @@
+.main-content{
+    .content-wrap{
+        .content-box{
+            .choose-panel{
+                p{
+                    text-align:center;
+                }
+            }
+            .panel-top-heading{
+                border-bottom: 1px solid #ddd;padding-bottom: 15px;
+            }
+            .panel-image-section{
+                margin:10px 0px;
+                .name{
+                    text-align:center;font-family:$font300;font-size:15px;padding:5px 0 10px;text-transform: capitalize;
+                }
+            }
+        }
+    }
+}

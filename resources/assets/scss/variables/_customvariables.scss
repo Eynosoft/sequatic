@@ -1,0 +1,111 @@
+//variables
+$color-white: #ffffff;
+$color-blue:#0059B2;
+$color-lightblue:#0066CC;
+$color-yellow:#FECC26;
+$color-green:#01D49B;
+
+
+$font500: 'MuseoSans-500';
+$font300: 'MuseoSans-300';
+$font700: 'MuseoSans-700'; 
+$font900: 'MuseoSans-900'; 
+$font05: 'Journal'; 
+
+$imageurl:     "../images";
+$fonturl :     "../fonts";  
+
+
+$screen-lg-max :1550px; 
+$screen-xlg-max :1700px; 
+
+//preset
+.mt-0{margin-top: 0 !important}
+.mb-0{margin-bottom:0px !important;}
+.p-0{padding:0px}
+
+ 
+//mixin
+@mixin border-all($width, $style, $color){
+  border-width: $width;
+  border-style: $style;
+  border-color: $color;
+}
+@mixin border-bottom($width, $style, $color) {
+  border-bottom-width: $width;
+  border-bottom-style: $style;
+  border-bottom-color: $color;
+}
+@mixin border-top($width, $style, $color) {
+  border-top-width: $width;
+  border-top-style: $style;
+  border-top-color: $color;
+}
+@mixin border-right($width, $style, $color) {
+  border-right-width: $width;
+  border-right-style: $style;
+  border-right-color: $color;
+}
+@mixin border-left($width, $style, $color) {
+  border-left-width: $width;
+  border-left-style: $style;
+  border-left-color: $color;
+}
+@mixin border-radius($radius) {
+  border-radius: $radius + px;   
+  -moz-border-radius: $radius + px;  
+  -webkit-border-radius: $radius + px;  
+}
+
+@mixin no-outline() {
+    outline:none;
+    -moz-outline:none;
+    -webkit-outline:none;
+    -ms-outline:none;
+    -o-outline:none;    
+}
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+     -o-box-shadow:$top $left $blur $color #{$inset};
+     -ms-box-shadow:$top $left $blur $color #{$inset};
+     -webkit-box-shadow:$top $left $blur $color #{$inset};
+     -moz-box-shadow:$top $left $blur $color #{$inset};
+      box-shadow:$top $left $blur $color #{$inset};
+    }
+
+@mixin text-shadow($top, $left, $blur, $color) {
+     -o-text-shadow:$top $left $blur $color;
+     -ms-text-shadow:$top $left $blur $color;
+     -webkit-text-shadow:$top $left $blur $color;
+     -moz-text-shadow:$top $left $blur $color ;
+      text-shadow:$top $left $blur $color;
+    }
+
+@mixin linearGradient($top, $bottom){
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $top 0%,$bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $top 0%,$bottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}    
+@mixin padding($t-padding, $r-padding, $b-padding, $l-padding) {
+  padding-top: $t-padding + px;
+  padding-right: $r-padding + px;
+  padding-bottom: $b-padding + px;
+  padding-left: $l-padding + px; 
+}    
+
+@mixin margin($t-margin, $r-margin, $b-margin, $l-margin) {
+  padding-top: $t-margin + px;
+  padding-right: $r-margin + px;
+  padding-bottom: $b-margin + px;
+  padding-left: $l-margin + px;
+} 
+
+// popup cross btn style
+
+%cross{ 
+  background-color: #f9ae39; border-radius: 50%;color: #fff;height: 24px; opacity: 1; position: absolute; right: 6px; top: 6px;  width: 24px;  z-index: 1;
+}
